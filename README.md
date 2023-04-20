@@ -18,24 +18,28 @@ DefendArr is a VPN killswitch for Docker containers that ensures your applicatio
 ## Setup
 
 1. Clone this repository:
-
+<pre>
 git clone https://github.com/yourusername/defendarr.git
+</pre>
 
 2. Change the current directory to `defendarr`:
+```bash
 cd defendarr
+```
 
 3. Modify the `.env` file to set your environment variables:
+```
 VPN_CONTAINER_NAME=your_vpn_container_name
 APP_CONTAINERS=app_container_1,app_container_2,app_container_3
 VPN_PROVIDER_NAME=your_vpn_provider_name
 CHECK_INTERVAL_MINUTES=5
+```
 
 Replace `your_vpn_container_name`, `app_container_1,app_container_2,app_container_3`, and `your_vpn_provider_name` with the appropriate values.
 
 4. To find your VPN provider's name, run the following command in your VPN container:
 
-curl ipleak.net/json/
-
+```curl ipleak.net/json/```
 
 Look for the `isp_name` field in the output JSON.
 
@@ -43,18 +47,15 @@ Look for the `isp_name` field in the output JSON.
 
 6. Build the DefendArr Docker image:
 
-docker build -t yourusername/defendarr .
-
+```docker build -t yourusername/defendarr .```
 
 7. Run DefendArr using Docker Compose:
 
-docker-compose up -d
-
+```docker-compose up -d```
 
 8. Check the logs for any issues:
 
-docker logs defendarr
-
+```docker logs defendarr```
 
 ## Configuration
 
@@ -67,7 +68,7 @@ You can configure DefendArr using the following environment variables:
 
 ## Support
 
-If you encounter any issues or have questions, please open an issue on GitHub or reach out on the *Arr community Discord.
+If you encounter any issues or have questions, please open an issue on GitHub or reach out via email, mailto:DefendArr@pm.me
 
 ## Contributing
 
