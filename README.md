@@ -43,7 +43,7 @@ Replace `your_vpn_container_name`, `app_container_1,app_container_2,app_containe
 
 Look for the `isp_name` field in the output JSON.
 
-5. Place the `dnsleaktest.sh` script inside a directory accessible by your VPN container. You can download the script from [here](https://github.com/macvk/dnsleaktest).
+5. Place the `dnsleaktest.sh` script inside the ```/config/```directory accessible by your VPN container. If there is no /config volume for the container, create one and put it there. You can download the script from [here](https://github.com/macvk/dnsleaktest).
 
 6. Build the DefendArr Docker image:
 
