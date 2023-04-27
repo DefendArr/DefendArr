@@ -1,12 +1,8 @@
 # Dockerfile
-FROM ubuntu:latest
+FROM alpine:latest
 
-RUN apt-get update && apt-get install -y \
-    curl \
-    jq \
-    docker.io
+RUN apk update && apk add docker-cli curl jq
 
-COPY check_leaks.sh /check_leaks.sh
-RUN chmod +x /check_leaks.sh
+COPY ./check_leaks.sh /check_leaks.sh
 
-ENTRYPOINT ["/check_leaks.sh"]
+ENTRYPOINT ["/bin/sh", "/check_leaks.sh"]
