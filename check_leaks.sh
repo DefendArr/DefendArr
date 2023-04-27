@@ -96,9 +96,6 @@ while true; do
         # Start all app containers
         for container in "${APP_CONTAINERS[@]}"; do
             docker start $container
-        # Start all app containers
-        for container in "${APP_CONTAINERS[@]}"; do
-            docker start $container
         done
         break
         else
@@ -111,7 +108,6 @@ while true; do
     if [[ $reconnect_attempts -ge 30 ]]; then
         log "Maximum number of reconnect attempts reached. Restarting the VPN container."
         docker restart $VPN_CONTAINER_NAME
-    fi
     fi
   log "Waiting for ${CHECK_INTERVAL_MINUTES} minutes before the next check..."
   sleep "${CHECK_INTERVAL_MINUTES}m"
