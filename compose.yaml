@@ -1,9 +1,9 @@
 version: '3.8'
 
 services:
-  vpn-killswitch:
-    image: vpn-killswitch
-    container_name: vpn-killswitch
+  defendarr:
+    image: defendarr
+    container_name: defendarr
     build: .
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
