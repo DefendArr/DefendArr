@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  vpn-killswitch:
+    image: vpn-killswitch
+    container_name: vpn-killswitch
+    build: .
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /path/to/your/config/file:/config
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "200k"
+        max-file: "10"

@@ -77,3 +77,11 @@ Pull requests and bug reports are welcome! If you'd like to contribute to the pr
 ## License
 
 DefendArr is released under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Support DefendArr
+
+If you find DefendArr useful and would like to support the project, please consider donating. Your contributions will help ensure the continued development and improvement of DefendArr. We accept donations through the following methods:
+
+- **PayPal**: [Donate via PayPal](https://www.paypal.com/donate?hosted_button_id=YQBHSUQ47FNQS)
+
+Thank you for your support!
