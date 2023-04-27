@@ -1,3 +1,5 @@
+![image](https://user-images.githubusercontent.com/131348548/234978256-2f3fc1f0-a9a5-4658-bb87-4f472a57262e.png)
+
 # DefendArr
 
 DefendArr is an IP and DNS leak detector to act as a killswitch for Docker containers that ensures your applications remain protected in case of a VPN connection failure. It periodically checks for IP and DNS leaks, stops application containers when leaks are detected, and restarts them once the VPN connection is reestablished.
